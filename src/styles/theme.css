@@ -1,0 +1,26 @@
+@layer my-reset, starlight, my-overrides;
+
+@layer my-reset {
+  * {
+    --sl-color-bg-sidebar: transparent;
+  }
+}
+
+@layer my-override {
+  .page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  header {
+    background-color: var(--sl-color-bg);
+  }
+  header > .header {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-inline-end: 1px solid var(--sl-color-hairline);
+  }
+  .sidebar-pane {
+    inset-inline-start: auto;
+    border-inline-end: 1px solid var(--sl-color-hairline);
+  }
+}
