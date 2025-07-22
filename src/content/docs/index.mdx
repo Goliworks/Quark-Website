@@ -1,36 +1,45 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: A modern Reverse Proxy written in Rust.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: >
+    Try Quark — a fast and easy-to-configure reverse proxy, load balancer, and file server.
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
+    - text: Start with Quark
       link: /guides/example/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: Latest release v0.2.0
+      link: https://github.com/Goliworks/Quark/releases
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
-## Next steps
+## Key Features
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="Easy configuration" icon="document">
+    Quark uses **TOML** files to configure its behavior. Just a few lines are
+    enough to get started.
+  </Card>
+  <Card title="Automatic HTTPS" icon="seti:lock">
+    You already have your TLS certificates? No problem! Simply specify your
+    certificates in the configuration file and Quark will handle the rest.
+  </Card>
+  <Card title="Native IPv6 support" icon="sun">
+    Thanks to dual-stack sockets, Quark natively supports **IPv6** and **IPv4**
+    simultaneously. Your infrastructure is future-ready without additional
+    configuration.
+  </Card>
+  <Card title="Load balancing" icon="random">
+    Distribute traffic intelligently with **Round Robin**, **Weighted Round
+    Robin**, and **IP Hash algorithms** for high-availability setups.
+  </Card>
+  <Card title="Static files" icon="seti:folder">
+    Serve your static files directly from Quark with simple and efficient
+    built-in capabilities. One tool for all your web serving needs.
+  </Card>
 </CardGrid>
