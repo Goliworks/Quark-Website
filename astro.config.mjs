@@ -33,6 +33,9 @@ export default defineConfig({
         },
       ],
       customCss: ["./src/styles/theme.css"],
+      components: {
+        Footer: "./src/components/footer.astro",
+      },
     }),
   ],
 });
