@@ -21,11 +21,20 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: "Getting Stared",
+          label: "Getting started",
           items: [
             // Each item here is one entry in the navigation menu.
             { label: "Installation", slug: "getting_started/installation" },
             { label: "Quick start", slug: "getting_started/quick_start" },
+          ],
+        },
+        {
+          label: "Guides",
+          // autogenerate: { directory: "reference" },
+          items: [
+            // Each item here is one entry in the navigation menu.
+            { label: "Reverse proxy", slug: "guides/reverse_proxy" },
+            { label: "Load blancing", slug: "guides/load_balancing" },
           ],
         },
         {
