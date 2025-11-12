@@ -35,6 +35,10 @@ export default defineConfig({
             // Each item here is one entry in the navigation menu.
             { label: "Reverse proxy", slug: "guides/reverse_proxy" },
             { label: "Load blancing", slug: "guides/load_balancing" },
+            {
+              label: "Static File Serving",
+              slug: "guides/static_file_serving",
+            },
           ],
         },
         {
