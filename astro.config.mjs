@@ -38,6 +38,7 @@ export default defineConfig({
             "guides/static-file-serving",
             "guides/redirections",
             "guides/tls-https",
+            "guides/http-headers",
           ],
         },
         {
