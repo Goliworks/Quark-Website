@@ -39,6 +39,10 @@ export default defineConfig({
               label: "Static File Serving",
               slug: "guides/static_file_serving",
             },
+            {
+              label: "Redirections",
+              slug: "guides/redirections",
+            },
           ],
         },
         {
