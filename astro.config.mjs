@@ -37,6 +37,7 @@ export default defineConfig({
             "guides/load-balancing",
             "guides/static-file-serving",
             "guides/redirections",
+            "guides/tls-https",
           ],
         },
         {
