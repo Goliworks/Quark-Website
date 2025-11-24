@@ -5,7 +5,7 @@ description: Learn how to configure a reverse proxy in Quark
 
 Quark acts as a reverse proxy by forwarding incoming HTTP/HTTPS requests to one or more backend servers. This allows you to route traffic based on domains and paths while handling TLS termination at the proxy level.
 
-## Basic Configuration
+## Basic configuration
 
 To configure a reverse proxy, you need to define a service with at least one location that specifies where to forward requests.
 
@@ -23,7 +23,7 @@ This configuration will:
 - Listen for requests to example.com
 - Forward all paths (/\*) to the backend server at http://192.168.1.10:8080
 
-## Path-Based Routing
+## Path-based routing
 
 You can define multiple locations to route different paths to different backends:
 
@@ -43,7 +43,7 @@ target = "http://192.168.1.30:3000"
 
 Quark will match requests in the order they are defined, so place more specific routes before general ones.
 
-## Multiple Services
+## Multiple services
 
 You can host multiple services on the same Quark instance by defining multiple service sections:
 

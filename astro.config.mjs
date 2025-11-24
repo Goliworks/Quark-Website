@@ -24,8 +24,8 @@ export default defineConfig({
           label: "Getting started",
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "Installation", slug: "getting_started/installation" },
-            { label: "Quick start", slug: "getting_started/quick_start" },
+            "getting-started/installation",
+            "getting-started/quick-start",
           ],
         },
         {
@@ -33,16 +33,10 @@ export default defineConfig({
           // autogenerate: { directory: "reference" },
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "Reverse proxy", slug: "guides/reverse_proxy" },
-            { label: "Load blancing", slug: "guides/load_balancing" },
-            {
-              label: "Static File Serving",
-              slug: "guides/static_file_serving",
-            },
-            {
-              label: "Redirections",
-              slug: "guides/redirections",
-            },
+            "guides/reverse-proxy",
+            "guides/load-balancing",
+            "guides/static-file-serving",
+            "guides/redirections",
           ],
         },
         {

@@ -5,7 +5,7 @@ description: Learn how to configure load balancing in Quark
 
 Load balancing distributes incoming traffic across multiple backend servers, improving availability and scalability. Quark supports several load balancing algorithms and can be configured to balance traffic for any service.
 
-## Basic Configuration
+## Basic configuration
 
 To set up load balancing, you need to:
 
@@ -26,7 +26,7 @@ target = "http://${my_backends}:8080"
 
 In this example, requests to example.com will be distributed across the three backend servers on port 8080.
 
-## Load Balancing Algorithms
+## Load balancing algorithms
 
 Quark supports different algorithms for distributing traffic:
 

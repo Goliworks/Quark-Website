@@ -5,7 +5,7 @@ description: Learn how to configure a reverse proxy in Quark
 
 Quark can serve static files directly from the filesystem, eliminating the need for a separate web server. This is ideal for hosting static websites, Single Page Applications (SPAs), or serving assets like images, CSS, and JavaScript files.
 
-## Basic File Serving
+## Basic file serving
 
 To serve files from a directory, use a file server configuration:
 
@@ -25,7 +25,7 @@ For example:
 - Request: `https://example.com/assets/style.css`
 - Serves: `/var/www/assets/style.css`
 
-## Serving a Static Website
+## Serving a static website
 
 To serve a complete static website with automatic index.html handling:
 
@@ -70,7 +70,7 @@ target = "/var/www/spa/index.html"
 
 This configuration serves index.html for all requests, allowing your JavaScript framework (React, Vue, Angular, etc.) to handle routing.
 
-## Directory Access Control
+## Directory access Control
 
 By default, Quark does not allow directory listing. When accessing a directory without an `index.html` file, a 403 Forbidden error is returned. This prevents users from browsing the directory structure.
 
