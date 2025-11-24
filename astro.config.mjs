@@ -24,6 +24,7 @@ export default defineConfig({
           label: "Getting started",
           items: [
             // Each item here is one entry in the navigation menu.
+            "getting-started/introduction",
             "getting-started/installation",
             "getting-started/quick-start",
           ],
