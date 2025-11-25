@@ -1,5 +1,5 @@
 ---
-title: Services
+title: Services configuration
 description: Configuration reference for services
 ---
 

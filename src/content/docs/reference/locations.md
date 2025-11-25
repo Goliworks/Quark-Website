@@ -1,6 +1,6 @@
 ---
-title: Locations
-description: Configuration reference for servers
+title: Locations configuration
+description: Configuration reference for locations
 ---
 
 ## To do...

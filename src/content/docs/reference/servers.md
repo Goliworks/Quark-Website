@@ -1,5 +1,5 @@
 ---
-title: Servers
+title: Servers configuration
 description: Configuration reference for servers
 ---
 

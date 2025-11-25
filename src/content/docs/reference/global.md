@@ -1,6 +1,6 @@
 ---
-title: Global
-description: Configuration reference for servers
+title: Global configuration
+description: Global configuration reference
 ---
 
 The `[global]` section contains server-wide settings that apply to all servers and services in your Quark configuration. This section is optional—if not specified, default values are used.

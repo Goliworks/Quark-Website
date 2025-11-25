@@ -23,7 +23,6 @@ export default defineConfig({
         {
           label: "Getting started",
           items: [
-            // Each item here is one entry in the navigation menu.
             "getting-started/introduction",
             "getting-started/installation",
             "getting-started/quick-start",
@@ -33,7 +32,6 @@ export default defineConfig({
           label: "Guides",
           // autogenerate: { directory: "reference" },
           items: [
-            // Each item here is one entry in the navigation menu.
             "guides/reverse-proxy",
             "guides/load-balancing",
             "guides/static-file-serving",
@@ -44,7 +42,12 @@ export default defineConfig({
         },
         {
           label: "Reference",
-          autogenerate: { directory: "reference" },
+          items: [
+            { label: "Global", slug: "reference/global" },
+            { label: "Servers", slug: "reference/servers" },
+            { label: "Services", slug: "reference/services" },
+            { label: "Locations", slug: "reference/locations" },
+          ],
         },
       ],
       customCss: ["./src/styles/theme.css"],
