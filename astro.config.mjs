@@ -48,6 +48,7 @@ export default defineConfig({
             { label: "Services", slug: "reference/services" },
             { label: "Locations", slug: "reference/locations" },
             { label: "File servers", slug: "reference/file-servers" },
+            { label: "Redirections", slug: "reference/redirections" },
           ],
         },
       ],
