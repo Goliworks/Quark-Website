@@ -3,66 +3,38 @@ title: Installation
 description: Install the Quark reverse proxy.
 ---
 
-import { Aside } from "@astrojs/starlight/components";
+import { Aside, Steps } from "@astrojs/starlight/components";
 
 You can install Quark by downloading the latest release or building it from source.
 
 ## Get the latest release
 
-Download the latest release from Github [just here](https://github.com/Goliworks/Quark/releases).
+<Steps>
 
-Extract the contents of the downloaded archive and execute the installation script located in the extracted directory.
+1. Download the latest release from Github [just here](https://github.com/Goliworks/Quark/releases).
 
-```bash
-./install.sh
-```
+2. Extract the contents of the downloaded archive.
 
-## Build from source
+    ```bash
+    tar -xvf quark-0.3.0-x86_64-linux.tar.gz
+    ```
 
-If you prefer to build Quark from its source code, follow these steps :
+3. Go in the extracted archive and execute the installation script.
 
-<Aside>
-  You need at least **Rust 1.85** installed on your machine to build Quark.
+    ```bash
+    ./install.sh
+    ```
+
+4. Follows the instructions provided by the installer.
+
+5. Quark is installed and launched.
+
+</Steps>
+
+<Aside type="tip">
+The installer `./install.sh` can also be used to upgrade Quark from one version to another.
+Simply download the latest version of Quark and repeat the steps.
 </Aside>
-
-First, clone the Quark GitHub repository to your local machine.
-
-```bash
-git clone https://github.com/Goliworks/Quark.git
-cd Quark
-```
-
-### With the build tool
-
-Use the provided build script located in the tools directory to compile Quark.
-
-```bash
-./tools/build.sh
-```
-
-It will build Quark and generate a `.tar.gz` file in a `./dist` directory.
-
-Then, you can extract the archive and run :
-
-```bash
-./install.sh
-```
-
-### With Cargo
-
-If you prefer to build Quark manually, you can use cargo instead of the build script.
-
-```bash
-cargo build --release
-```
-
-It will build generate a binary in a `./target/release` directory.
-
-Then, you can execute directly the binary.
-
-```bash
-./target/release/quark --config /path/to/your/config_file.toml --logs /path/to/logs/directory
-```
 
 ## After installation
 
