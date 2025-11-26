@@ -49,6 +49,7 @@ export default defineConfig({
             { label: "Locations", slug: "reference/locations" },
             { label: "File servers", slug: "reference/file-servers" },
             { label: "Redirections", slug: "reference/redirections" },
+            { label: "Load Balancers", slug: "reference/load-balancers" },
           ],
         },
       ],

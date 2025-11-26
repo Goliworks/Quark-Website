@@ -1,6 +1,6 @@
 ---
 title: Redirections configuration
-description: Configuration reference for File Servers
+description: Configuration reference for Redirections
 ---
 
 ## Parameters
