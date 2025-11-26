@@ -32,6 +32,7 @@ export default defineConfig({
           label: "Guides",
           // autogenerate: { directory: "reference" },
           items: [
+            "guides/configuration",
             "guides/reverse-proxy",
             "guides/load-balancing",
             "guides/static-file-serving",

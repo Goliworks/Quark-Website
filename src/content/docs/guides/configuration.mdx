@@ -1,0 +1,68 @@
+---
+title: Configuration
+description: Configuration reference for locations
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+This guide explains how Quark's configuration system works and how different sections interact with each other.
+
+## File structure
+
+Quark uses TOML (Tom's Obvious, Minimal Language) for configuration. A typical configuration file has the following structure:
+
+```toml
+# Import external configuration files (optional)
+import = ["/path/to/external/config.toml"]
+
+# Global server settings (optional)
+[global]
+# Connection and performance settings
+
+# Define servers (optional, main is created by default)
+[servers.<name>]
+# Port and timeout configurations
+
+# Define services (required for a functional server)
+[services.<name>]
+# Domain and routing configurations
+
+# Define load balancers (optional)
+[loadbalancers.<name>]
+# Backend servers and algorithms
+```
+
+The `import` parameter allows you to split your configuration across multiple files:
+
+```toml
+import = [
+  "/etc/quark/first_service.toml",
+  "/etc/quark/second_service.toml",
+]
+```
+
+<Aside>
+  Only `services` and `loadbalancers` can be defined in external files. External
+  files cannot contain `global`, `servers`, or import sections
+</Aside>
+
+For detailed documentation of each section:
+
+- [Global configuration Reference](/reference/global)
+- [Servers Reference](/reference/servers)
+- [Services Reference](/reference/services)
+- [Load Balancers Reference](/reference/load-balancers)
+
+## Hierarchy and Priority
+
+Quark's configuration follows a hierarchical model where more specific settings override more general ones.
+
+```
+Global Settings
+    ↓
+Server Settings (main, custom, etc.)
+    ↓
+Service Settings (example.com, api.example.com, etc.)
+    ↓
+Route Settings (locations, file_servers, redirections)
+```
