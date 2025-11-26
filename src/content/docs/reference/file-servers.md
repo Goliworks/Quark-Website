@@ -3,9 +3,9 @@ title: File Servers configuration
 description: Configuration reference for File Servers
 ---
 
-## Parameters
-
 The `[[services.<name>.file_servers]]` section defines routes that serve static files directly from the filesystem. Each file server specifies a path pattern to match and a local directory or file to serve.
+
+## Parameters
 
 ### `source`
 

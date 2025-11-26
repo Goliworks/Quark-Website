@@ -3,9 +3,9 @@ title: Redirections configuration
 description: Configuration reference for Redirections
 ---
 
-## Parameters
-
 The `[[services.<name>.redirections]]` section defines URL redirections that automatically redirect clients from one URL to another. Each redirection specifies a source pattern and a target URL.
+
+## Parameters
 
 ### `source`
 

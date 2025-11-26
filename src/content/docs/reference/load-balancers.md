@@ -3,9 +3,9 @@ title: Load balancers configuration
 description: Configuration reference for Load balancers
 ---
 
-## Parameters
-
 The `[loadbalancers.<name>]` section defines load balancers that distribute incoming traffic across multiple backend servers. Load balancers can be referenced in location targets using the syntax `http://${loadbalancer_name}:port`.
+
+## Parameters
 
 ### `algo`
 
