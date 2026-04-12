@@ -53,6 +53,13 @@ export default defineConfig({
             { label: "Load Balancers", slug: "configuration/load-balancers" },
           ],
         },
+        {
+          label: "Extra topics",
+          items: [
+            { label: "Docker deployment", slug: "extra-topics/docker-deployment" },
+            { label: "Building from source", slug: "extra-topics/build-quark" },
+          ],
+        },
       ],
       customCss: ["./src/styles/theme.css"],
       components: {
