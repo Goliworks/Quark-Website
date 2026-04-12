@@ -49,6 +49,41 @@ The `[global]` section contains server-wide settings that apply to all servers a
 - **Default**: `20`
 - **Description**: Interval in seconds between HTTP keep-alive probes. The server sends probes to detect if the client is still connected. Only applies when `keepalive` is enabled.
 
+### `tls_handshake_timeout`
+
+- **Type:** `Integer`
+- **Required:** No
+- **Default:** `10`
+- **Description:** Timeout in seconds for TLS handshake. If the TLS handshake doesn't complete within this time, the connection will be terminated.
+
+### `http_header_timeout`
+
+- **Type:** `Integer`
+- **Required:** No
+- **Default:** `30`
+- **Description:** Timeout in seconds for reading HTTP headers. If the client doesn't send complete HTTP headers within this time, the connection will be terminated.
+
+### `idle_timeout`
+
+- **Type:** `Integer`
+- **Required:** No
+- **Default:** `300`
+- **Description:** Timeout in seconds for idle connections. Connections that remain idle (no data sent or received) for longer than this duration will be automatically closed.
+
+### `idle_check_interval`
+
+- **Type:** `Integer`
+- **Required:** No
+- **Default:** `20`
+- **Description:** Interval in seconds between checks for idle connections. The server periodically checks for idle connections at this interval and closes those that have exceeded the `idle_timeout`.
+
+### `max_conn_per_ip`
+
+- **Type:** `Integer`
+- **Required:** No
+- **Default:** `None` (no limit)
+- **Description:** Maximum number of simultaneous connections allowed from a single IP address. When set, this limits how many concurrent connections a single client can maintain, providing basic rate limiting and DoS protection.
+
 ## Example
 
 Basic global configuration:
@@ -58,6 +93,11 @@ Basic global configuration:
 backlog = 4096
 max_connections = 1024
 max_requests = 100
+max_conn_per_ip = 10
+tls_handshake_timeout = 10
+http_header_timeout = 30
+idle_timeout = 180
+idle_check_interval = 15
 keepalive = true
 keepalive_timeout = 60
 keepalive_interval = 20
