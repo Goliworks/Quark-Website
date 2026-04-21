@@ -65,6 +65,25 @@ export default defineConfig({
       components: {
         Footer: "./src/components/footer.astro",
       },
+      favicon: '/favicon-light.svg',
+      head: [
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'icon',
+            href: '/favicon-light.svg',
+            media: '(prefers-color-scheme: light)',
+          },
+        },
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'icon',
+            href: '/favicon-dark.svg',
+            media: '(prefers-color-scheme: dark)',
+          },
+        },
+      ],
     }),
   ],
 });
