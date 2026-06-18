@@ -84,6 +84,13 @@ The `[global]` section contains server-wide settings that apply to all servers a
 - **Default:** `None` (no limit)
 - **Description:** Maximum number of simultaneous connections allowed from a single IP address. When set, this limits how many concurrent connections a single client can maintain, providing basic rate limiting and DoS protection.
 
+### `tls_proxy_verify`
+
+- **Type**: `Boolean`
+- **Required**: No
+- **Default**: `true`
+- **Description**: 
+
 ## Example
 
 Basic global configuration:
